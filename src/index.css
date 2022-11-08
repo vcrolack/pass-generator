@@ -7,7 +7,21 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.card {
+
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 24px 40px;
+gap: 40px;
+
+position: absolute;
+width: 655px;
+height: 540px;
+left: 356px;
+top: 200px;
+
+background: #FFFFFF;
+box-shadow: 0px 7px 11px rgba(23, 42, 88, 0.14), 0px 1.4px 1.7875px rgba(23, 42, 88, 0.07);
+border-radius: 16px
 }
