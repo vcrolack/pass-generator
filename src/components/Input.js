@@ -1,6 +1,6 @@
 import React from "react";
 
-export const Input = ({ type, placeholder, list, isReadOnly }) => {
+export const Input = ({ type, placeholder, list, isReadOnly, personalization, ico }) => {
   return (
     <>
       {type === "checkbox" && (
@@ -8,8 +8,8 @@ export const Input = ({ type, placeholder, list, isReadOnly }) => {
           {list.map((item, index) => {
             return ( 
                 <label>
-                  <input type="checkbox" name={index} id={index} />
                   {item}
+                  <input type="checkbox" name={index} id={index} />
                 </label>
             );
           })}
@@ -17,12 +17,19 @@ export const Input = ({ type, placeholder, list, isReadOnly }) => {
       )}
 
       {type !== "checkbox" && isReadOnly && (
-        <input type={type} placeholder={placeholder} readOnly />
+        <div className="input-wrapper pass-response">
+          <div className="container-input">
+            <input type={type} placeholder={placeholder} />
+          </div>
+          <div className="container-icon">
+            <img  className="input-icon" src={ico} alt="" />
+          </div>
+        </div>
       )}
 
       {type !== "checkbox" && !isReadOnly && (
-        <input type={type} placeholder={placeholder} />
-      )}
+        <input  type={type} placeholder={placeholder} />
+      )} 
     </>
   );
 };

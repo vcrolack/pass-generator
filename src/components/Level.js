@@ -1,13 +1,14 @@
 import React from 'react'
+import level from '../assets/level.svg'
 
 export const Level = () => {
   return (
     <div className='level-container'>
       <div className="left-box">
-        <p>Security level</p>
+        <p className='level-title'>Security level</p>
       </div>
       <div className="right-box">
-        <p>ico</p>
+        <img className='level-icon' src={level} alt="" />
       </div>
     </div>
   )

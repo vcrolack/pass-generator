@@ -8,13 +8,14 @@ export const Checkbox = () => {
     "Includes symbols",
   ];
   return (
-    <div className="password-components">
+    <div className="wrapper-components">
       <form action="">
         {options.map((option, index) => {
           return (
-            <>
-              <label><input type="checkbox" name={option} id={index} value={index} /> {option}</label>
-            </>
+            <div className="container-options">
+              <input type="checkbox" name={option} id={index} value={index} /> 
+              <label className="checkbox-label">{option}</label>
+            </div>
           );
         })}
       </form>
