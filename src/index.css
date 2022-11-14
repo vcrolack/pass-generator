@@ -189,13 +189,10 @@ input[type='text'] {
 
   width: 575px;
   height: 8px;
+}
 
-
-  /* Inside auto layout */
-
-  flex: none;
-  order: 3;
-  flex-grow: 0;
+.slider-rectangule {
+  width: 100%;
 }
 
 input[type='range']::-webkit-slider-runnable-track {
@@ -204,7 +201,7 @@ input[type='range']::-webkit-slider-runnable-track {
 
   /* Inside auto layout */
 
-  background: #F5F6FA;
+  
 
   flex: none;
   order: 0;

@@ -12,7 +12,7 @@ export const Checkbox = () => {
       <form action="">
         {options.map((option, index) => {
           return (
-            <div className="container-options">
+            <div key={index}  className="container-options">
               <input type="checkbox" name={option} id={index} value={index} /> 
               <label className="checkbox-label">{option}</label>
             </div>
