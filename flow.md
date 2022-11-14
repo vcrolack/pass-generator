@@ -19,7 +19,7 @@ An app for password generation
     * Assing values for the checkboxes
 3. Add functionality to security level (NEW)
     * Create a range of security
-      * In this range have to length validatio
+      * In this range have to length validation
       * Plus for use symbols, numbers, capital letters and lower letters
     * Show to the user its security with the UI
 4. Add functionaly to generate pass button (NEW)

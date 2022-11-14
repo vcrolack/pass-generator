@@ -236,7 +236,6 @@ input[type='range']::-webkit-slider-thumb {
   gap: 12px;
 
   width: 575px;
-  height: 132px;
 
 
   /* Inside auto layout */

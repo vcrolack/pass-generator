@@ -1,4 +1,6 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
+
+import { PassContext } from "../context/PassContext";
 
 export const Checkbox = () => {
   const options = [
@@ -10,6 +12,7 @@ export const Checkbox = () => {
   const [userOptions, setUserOptions] = useState(
     new Array(options.length).fill(false)
   );
+  const passContext = useContext(PassContext)
 
   const handleOnChange = (position) => {
     const updatedOptions = userOptions.map((option, index) =>
@@ -20,9 +23,9 @@ export const Checkbox = () => {
   };
 
   return (
-    <div className="wrapper-components">
-      {console.log(userOptions)}
-      <form action="">
+    <PassContext.Provider value={passContext.options = userOptions}>
+      {console.log(passContext)}
+      <div className="wrapper-components">
         {options.map((option, index) => {
           return (
             <div key={index} className="container-options">
@@ -38,7 +41,7 @@ export const Checkbox = () => {
             </div>
           );
         })}
-      </form>
-    </div>
+      </div>
+    </PassContext.Provider>
   );
 };
