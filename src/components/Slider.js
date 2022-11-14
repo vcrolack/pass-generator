@@ -1,12 +1,15 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
+
+import { PassContext } from "../context/PassContext";
 
 export const Slider = () => {
   const [count, setCount] = useState(0);
+  const passContext = useContext(PassContext);
 
   useEffect(() => {}, [count]);
 
   return (
-    <>
+    <PassContext.Provider value={passContext.lengthPass = parseInt(count)}>
       <div className="letter-counter">
         <div className="length-wrapper">
           <div className="letter-counter-title">
@@ -30,6 +33,6 @@ export const Slider = () => {
           id="slider"
         />
       </div>
-    </>
+    </PassContext.Provider>
   );
 };

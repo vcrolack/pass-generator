@@ -1,3 +1,7 @@
+import { useContext } from "react";
+
+import { PassContext } from "./context/PassContext";
+
 import "./index.css";
 import { Checkbox } from "./components/Checkbox";
 import { Card } from "./components/Card";
@@ -10,6 +14,12 @@ import { Slider } from "./components/Slider";
 
 function App() {
 
+  const passContext = useContext(PassContext);
+
+  const handleClick = e => {
+    console.log(passContext)
+  };
+
   return (
     <div className="App">
       <Card>
@@ -19,7 +29,7 @@ function App() {
           <Slider />
           <Checkbox />
           <Level />
-          <Button type="button" styleBtn="btn" value="Generate pass" /> 
+          <Button callback={handleClick} type="button" styleBtn="btn" value="Generate pass" /> 
         </div>
       </Card>
     </div>
