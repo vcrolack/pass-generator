@@ -29,8 +29,8 @@ An app for password generation
         * Investigate ways to generate a custom password
       * return password
 5. Show the password on the input (DONE)
-6. Create function to copy password (WIP)
-7. Create notification (NEW)
+6. Create function to copy password (DONE)
+7. Create notification (WIP)
     * Create a new component
     * Create a react context
     * Show the notificacions for three seconds
