@@ -11,7 +11,8 @@ export const PassProvider = ({children}) => {
   ];
   const [count, setCount] = useState(0);
   const [options, setOptions] = useState(new Array(userOptions.length).fill(false));
-  return <PassContext.Provider value={{count, setCount, options, setOptions, userOptions}}>{children}</PassContext.Provider>
+  const [password, setPassword] = useState("CONtr4S3ña");
+  return <PassContext.Provider value={{count, setCount, options, setOptions, userOptions, password, setPassword}}>{children}</PassContext.Provider>
 }
 
 export const usePassContext = () => {

@@ -18,7 +18,7 @@ function App() {
         <Card>
           <div className="content">
             <Title title="Pass generator" />
-            <Input ico={ico} personalization="pass-response" placeholder="CONtr4S3ña" type="text" isReadOnly={true} />
+            <Input ico={ico} personalization="pass-response"  type="text" isReadOnly={true} />
             <Slider />
             <Checkbox />
             <Level />
