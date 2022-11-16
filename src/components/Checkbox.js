@@ -1,32 +1,22 @@
 import React, { useState, useContext } from "react";
 
-import { PassContext } from "../context/PassContext";
+import { PassContext, usePassContext } from "../context/PassContext";
 
 export const Checkbox = () => {
-  const options = [
-    "Includes capital letters",
-    "Includes lowercase letters",
-    "Includes numbers",
-    "Includes symbols",
-  ];
-  const [userOptions, setUserOptions] = useState(
-    new Array(options.length).fill(false)
-  );
-  const passContext = useContext(PassContext)
+  const {options, setOptions, userOptions} = usePassContext();
+
 
   const handleOnChange = (position) => {
-    const updatedOptions = userOptions.map((option, index) =>
+    const updatedOptions = options.map((option, index) =>
       index === position ? !option : option
     );
 
-    setUserOptions(updatedOptions);
+    setOptions(updatedOptions);
   };
 
   return (
-    <PassContext.Provider value={passContext.options = userOptions}>
-      {console.log(passContext)}
       <div className="wrapper-components">
-        {options.map((option, index) => {
+        {userOptions.map((option, index) => {
           return (
             <div key={index} className="container-options">
               <input
@@ -34,7 +24,7 @@ export const Checkbox = () => {
                 name={option}
                 id={index}
                 value={option}
-                checked={userOptions[index]}
+                checked={options[index]}
                 onChange={() => handleOnChange(index)}
               />
               <label className="checkbox-label">{option}</label>
@@ -42,6 +32,5 @@ export const Checkbox = () => {
           );
         })}
       </div>
-    </PassContext.Provider>
   );
 };
