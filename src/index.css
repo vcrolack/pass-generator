@@ -359,6 +359,7 @@ input[type='checkbox'] {
 
   width: 22px;
   height: 24px;
+  
 
 
   /* Inside auto layout */
@@ -367,6 +368,10 @@ input[type='checkbox'] {
   order: 1;
   flex-grow: 0;
 }
+
+.level-icon img {
+  color:red;
+} 
 
 .btn {
   display: flex;

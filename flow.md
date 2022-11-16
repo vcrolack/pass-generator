@@ -17,7 +17,7 @@ An app for password generation
       * What happen if the form is blank
       * What happen if the form is full
     * Assing values for the checkboxes
-3. Add functionality to security level (WIP)
+3. Add functionality to security level (DONE)
     * Create a range of security
       * In this range have to length validation
       * Plus for use symbols, numbers, capital letters and lower letters
@@ -29,7 +29,7 @@ An app for password generation
         * Investigate ways to generate a custom password
       * return password
 5. Show the password on the input (DONE)
-6. Create function to copy password (NEW)
+6. Create function to copy password (WIP)
 7. Create notification (NEW)
     * Create a new component
     * Create a react context
