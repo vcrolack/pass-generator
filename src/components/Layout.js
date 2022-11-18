@@ -1,5 +1,5 @@
 import React from 'react'
-import { PassContext, usePassContext } from '../context/PassContext'
+import { usePassContext } from '../context/PassContext'
 import { Notification } from './Notification';
 
 export const Layout = ({children}) => {

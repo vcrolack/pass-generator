@@ -10,7 +10,6 @@ import { Level } from "./components/Level";
 import {Send} from "./components/Send"
 import ico from './assets/copy.svg'
 import { Slider } from "./components/Slider";
-import { Notification } from "./components/Notification";
 
 function App() {
 
