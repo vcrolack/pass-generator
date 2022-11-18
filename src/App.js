@@ -1,6 +1,7 @@
 import { PassProvider } from "./context/PassContext";
 
 import "./index.css";
+import { Layout } from "./components/Layout";
 import { Checkbox } from "./components/Checkbox";
 import { Card } from "./components/Card";
 import { Title } from "./components/Title";
@@ -9,12 +10,13 @@ import { Level } from "./components/Level";
 import {Send} from "./components/Send"
 import ico from './assets/copy.svg'
 import { Slider } from "./components/Slider";
+import { Notification } from "./components/Notification";
 
 function App() {
 
   return (
     <PassProvider >
-      <div className="App">
+      <Layout>
         <Card>
           <div className="content">
             <Title title="Pass generator" />
@@ -25,7 +27,7 @@ function App() {
             <Send styleBtn="btn"  /> 
           </div>
         </Card>
-      </div>
+      </Layout>
     </PassProvider>
   );
 }

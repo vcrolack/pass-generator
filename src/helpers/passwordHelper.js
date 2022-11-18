@@ -26,7 +26,6 @@ export const generatePassword = (length, options) => {
 export const securityLevel = (password, options) => {
   let level = 0;
   let levelString = "";
-  console.log(password);
 
   if (password.length > 8) {
     level += 1.2;

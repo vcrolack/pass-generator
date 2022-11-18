@@ -20,7 +20,7 @@ gap: 40px;
 position: absolute;
 width: 655px;
 height: 610px;
-left: 356px;
+left: 480px;
 top: 200px;
 
 background: #FFFFFF;
@@ -447,6 +447,31 @@ input[type='checkbox'] {
 
   text-align: center;
   cursor: not-allowed ;
+}
+
+
+.notification-container {
+  width: 300px;
+  height: auto;
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+  background-color: #d0e7dd;
+  border: 2px solid #75b898;
+
+  position: absolute;
+  right: 20px;
+  top: 20px;
+
+  z-index: 20;
+}
+
+.notification-container p {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  font-weight: bold;
+
 }
 
 @media screen and (min-width: 767px) and (max-width: 1023px) {
