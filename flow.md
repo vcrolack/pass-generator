@@ -30,9 +30,9 @@ An app for password generation
       * return password
 5. Show the password on the input (DONE)
 6. Create function to copy password (DONE)
-7. Create notification (WIP)
+7. Create notification (DONE)
     * Create a new component
     * Create a react context
     * Show the notificacions for three seconds
     * Delete the notification
-8. Testing (NEW)
+8. Testing (DONE)
